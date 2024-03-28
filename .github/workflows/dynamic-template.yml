@@ -49,9 +49,9 @@ jobs:
         with:
           global_template_repository: varunsridharan/varunsridharan
           files: |
-            README.md
-            templates/variables/defaults.md=output/variables/defaults.md
-            templates/file-includes/inline.md=output/file-includes/inline.md
-            templates/file-includes/reusable-includes.md=output/file-includes/reusable-includes.md
+            templates/README.md=README.md
+#            README.md
+#            templates/file-includes/inline.md=output/file-includes/inline.md
+#            templates/file-includes/reusable-includes.md=output/file-includes/reusable-includes.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
