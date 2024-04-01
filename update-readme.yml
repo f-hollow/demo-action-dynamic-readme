@@ -1,0 +1,29 @@
+name: Update README
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # - name: Append "Done" to README
+      #   run: echo "Done" >> README.md
+
+      - name: Append table contents to README
+        run: cat assets/table.md >> README.md
+
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: 'Update README'
+          add: README.md
