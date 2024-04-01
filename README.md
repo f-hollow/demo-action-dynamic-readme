@@ -1,5 +1,5 @@
 # Dynamic Readme - **Github Action** Demo
 
-<\!-- START table.md -->
+<\!-- START ./table.md -->
 
-<\!-- END table.md -->
+<\!-- END ./table.md -->
