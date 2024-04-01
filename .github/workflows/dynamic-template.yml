@@ -49,8 +49,8 @@ jobs:
         with:
           global_template_repository: varunsridharan/varunsridharan
           files: |
-            templates/README.md=README.md
-#            README.md
+            templates/file-includes/README.md=output/file-includes/README.md
+            README.md
 #            templates/file-includes/inline.md=output/file-includes/inline.md
 #            templates/file-includes/reusable-includes.md=output/file-includes/reusable-includes.md
         env:
