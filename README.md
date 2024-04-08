@@ -13,3 +13,7 @@ This repo contains some workflows to update README.
 | One | Two | Three |
 
 <!-- END ./tables/table.md -->
+
+## References
+
+- [Hooks](https://pre-commit.com/hoos.html)
