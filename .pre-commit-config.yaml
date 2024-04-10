@@ -1,10 +1,25 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
-    hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.2.0
+  hooks:
+    - id: trailing-whitespace
+    - id: end-of-file-fixer
+    - id: check-yaml
+    - id: check-added-large-files
+- repo: https://github.com/tcort/markdown-link-check
+  rev: v3.12.1
+  hooks:
+    - id: markdown-link-check
+      language_version: 20.12.1
+      args: [-q]
+# - repo: https://github.com/igorshubovych/markdownlint-cli
+#   rev: v0.38.0
+#   hooks:
+#     - id: markdownlint
+#       language_version: 20.10.0
+# - repo: https://github.com/DavidAnson/markdownlint-cli2
+#   rev: v0.13.0
+#   hooks:
+#     - id: markdownlint-cli2
